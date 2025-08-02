@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>365 Alasan Aku Sayang Kamu</title>
+    <link rel="stylesheet" href="styless.css" />
+  </head>
+  <body>
+    <div class="background-grid">
+      <!-- Tambahkan lebih banyak <img> jika diperlukan -->
+      <img src="1.jpg" class="bg-img" />
+      <img src="2.jpg" class="bg-img" />
+      <img src="3.jpg" class="bg-img" />
+      <img src="4.jpg" class="bg-img" />
+      <img src="5.jpg" class="bg-img" />
+      <img src="6.jpg" class="bg-img" />
+      <img src="7.jpg" class="bg-img" />
+      <img src="8.jpg" class="bg-img" />
+      <img src="9.jpg" class="bg-img" />
+      <img src="10.jpg" class="bg-img" />
+      <img src="11.jpg" class="bg-img" />
+      <img src="12.jpg" class="bg-img" />
+      <img src="13.jpg" class="bg-img" />
+      <img src="14.jpg" class="bg-img" />
+      <img src="15.jpg" class="bg-img" />
+      <img src="16.jpg" class="bg-img" />
+      <img src="17.jpg" class="bg-img" />
+      <img src="18.jpg" class="bg-img" />
+      <img src="19.jpg" class="bg-img" />
+      <img src="20.jpg" class="bg-img" />
+      <img src="21.jpg" class="bg-img" />
+      <img src="22.jpg" class="bg-img" />
+      <img src="23.jpg" class="bg-img" />
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="box">
+      <h1>365 Alasan Aku Sayang Kamu 💖</h1>
+      <div id="alasan">Klik tombol di bawah ini yaa...</div>
+      <button onclick="tampilkanAlasan()">Lihat Alasan</button>
+    </div>
+
+    <script>
+      const alasanList = [
+        "Karena kamu selalu sabar sama aku.",
+        "Karena senyuman kamu bikin hari-hariku lebih cerah.",
+        "Karena kamu selalu semangatin aku walau aku lagi down.",
+        "Karena kamu selalu inget hal-hal kecil yang aku suka.",
+        "Karena kamu adalah rumah yang selalu bikin aku nyaman.",
+        // Tambahkan lebih banyak alasan hingga 365!
+      ];
+
+      let index = 0;
+      function tampilkanAlasan() {
+        const alasanBox = document.getElementById("alasan");
+        if (index < alasanList.length) {
+          alasanBox.innerText = alasanList[index];
+          index++;
+        } else {
+          alasanBox.innerText =
+            "Udah 365 alasan! Tapi sebenernya... alasannya gak pernah habis 💕";
+        }
+      }
+    </script>
+  </body>
+</html>
